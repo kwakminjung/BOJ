@@ -1,6 +1,4 @@
 import sys
-def get_key(tup):
-    return tup[1]
 N = int(sys.stdin.readline().strip())
 str_dic = {}
 str_key = ''
