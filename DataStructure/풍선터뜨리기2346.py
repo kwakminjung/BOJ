@@ -1,4 +1,3 @@
-# 덱(Deque)
 import sys
 N = int(sys.stdin.readline().rstrip())
 balloon = list(map(int, sys.stdin.readline().rstrip().split()))
