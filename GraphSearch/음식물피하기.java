@@ -60,7 +60,7 @@ public class Main {
 		for(int i = 0 ; i < k ; i++) {
 			cnt = 0;
 			if(!visited[i]) {
-				dfs(i);
+				bfs(i);
 				if(max <= cnt) {
 					max = cnt;
 				}
@@ -74,14 +74,14 @@ public class Main {
 		bw.close();
 	}
 	
-	private static void dfs(int node) {
+	private static void bfs(int node) {
 		visited[node] = true;
 		graph.remove(node);
 		cnt ++;
 		for(int i = 0 ; i < k ; i++) {
 			if(!visited[i] && trash_node[node][i] == 1) {
 				graph.add(i);
-				dfs(i);
+				bfs(i);
 			}
 		}
 	}
